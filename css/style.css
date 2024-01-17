@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-indicators button {
+    width:6px !important;
+    height:6px !important;
+    /* border-radius: 100% !important; */
+} 
+
+.container{
+    width:100vh;
+}
+
+
