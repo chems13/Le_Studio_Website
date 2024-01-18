@@ -64,3 +64,19 @@ body{
     font-size: 1rem;
 
   }
+
+  footer a {
+    color:goldenrod;
+  }
+
+  hr{
+    border-bottom: 6px solid goldenrod;
+    border-radius: 5px;
+    width: 80px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .collapse {
+        background-color:rgba(0, 0, 0, 0.852); /* Changez la couleur selon vos besoins */
+    }
+}
