@@ -1,17 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Oswald', sans-serif;
+}
 
 .carousel-indicators button {
     width:6px !important;
     height:6px !important;
-    /* border-radius: 100% !important; */
+
 } 
 
-.container{
-    width:100vh;
+.no-border-radius {
+    border-radius: 0;
+
 }
 
+.social-media-icons{
+    margin-left: 2.5rem; 
 
+}
+.social-icon {
+    margin-right: 5px; 
+    color:aliceblue!important;
+}
+
+.phonumber{
+    margin-left:50px ;
+}
+.nav-item {
+    position: relative;
+  }
+
+ /*  carré doré au survol */
+ .nav-item:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E2BC74;
+    z-index: -1; /* Placement carré en dessous du texte */
+    border:solid 1px;
+  }
+
+  .emblemeEn{
+    /* display: block !important; */
+    position: absolute;
+    top:0;
+    right: 10rem;
+    /* clip-path: polygon(47% 13%, 53% 8%, 51% 0, 41% 0, 42% 8%);  */
+    clip-path: polygon(49% 50%, 72% 36%, 71% 0, 29% 0, 29% 35%);
+    width: 3.5rem;
+    height:3.5rem;
+    background-color: #E2BC74;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+  }
