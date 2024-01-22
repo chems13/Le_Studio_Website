@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,28 @@
   <!-- debut navbar en Zindex p/r carrousel-->
   <div class="z-1 position-absolute  w-100 rounded-3">
   <nav class="navbar navbar-expand-lg bg-body-transparent">
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <a class="navbar-brand" href="#" ><img src="assets/images/logo.png" alt="LOGO"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item text-white">
-            <a class="nav-link active text-white" aria-current="page" href="#">L'EQUIPE</a>
+            <a class="nav-link active text-white" aria-current="page" href="index.html">L'EQUIPE</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" href="#">LES ACTIVITES</a>
-          </li>
+          <!-- ajout dropdown sur onglet activités -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                LES ACTIVITES
+              </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-white  " href="presentation.html">LE CYCLING</a></li>
+                  <li><a class="dropdown-item text-white" href="presentation.html">LE TRAINING FONCTIONNEL</a></li>
+                  <li><a class="dropdown-item text-white" href="presentation.html">LE CROSSFIT</a></li>
+                  <li><a class="dropdown-item text-white" href="presentation.html">LE PERSONNAL TRAINING</a></li>
+                </ul>
+            </li> 
           <li class="nav-item">
             <a class="nav-link active text-white" href="#">NOS OFFRES</a>
           </li>
@@ -39,23 +48,25 @@
             <a class="nav-link active text-white" href="#">LE BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" href="#">CONTACT</a>
+            <a class="nav-link active text-white" href="contact.html">CONTACT</a>
           </li>
           <!-- ICON TEL -->
-          <div class="phonumber mt-1">
-            <img src="/assets/images/icons8-phone-24.png" alt="phone">
-          </div>
-          <li class="nav-item">
-            <a class="nav-link active text-white" href="#">05 59 47 84 18</a>
+          <li class="phonumber mt-1">
+          <a href="contact.html"><img src="Le_Studio_Website/assets/images/icons8-phone-24.png" alt="phone"></a> 
           </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="contact.html">05 59 47 84 18</a>
+          </li>
+        
 <!-- div  réseaux sociaux -->
-        <div class="social-media-icons ml-auto d-flex align-items-center justify-content-between">
+        <li class="social-media-icons ml-auto d-flex align-items-center justify-content-between">
   <!-- boutons de réseaux sociaux img -->
-  <a href="#" class="social-icon "><i class="bi bi-facebook"></i></a>
-  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="social-icon "><i class="fa fa-tripadvisor"></i></a>
-   </div>
-</div>
+  <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" class="social-icon "><i class="bi bi-facebook"></i></a>
+  <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.tripadvisor.com/" target="_blank" class="social-icon "><i class="fa fa-tripadvisor"></i></a>
+</li>
+   </ul>  
+  </div>
 </div>
 </nav>
 </div>
@@ -103,7 +114,7 @@
   <div class="titre d-flex flex-column justify-content-center align-items-center text-center mt-5">
     <h5>LE STUDIO SPORT & COACHING,<br>SALLE DE SPORT,FITNESS ET CROSSFIT A BIARRITZ</h5>
     <!-- <HR> -->
-    <hr style="border-bottom: 5px solid #E2BC74; border-radius: 5px;" width= "80px">
+    <hr>
    </div><!-- FIN <HR> -->
                                                     
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam aliquam, velit consequuntur qui ad voluptate enim eius  saepe, totam, minus dolorum obcaecati voluptatibus molestias? Blanditiis dolore fuga provident rerum.</p>
@@ -176,9 +187,9 @@
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-2  justify-content-center">
       <div class="col">
         <div class="card h-100 border-0">
-          <img src="assets/images/bg_temoignage copy.jpg" class="card-img-top rounded-0" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+          <img src="assets/images/mangersport.jpg" class="card-img-top rounded-0" alt="...">
+          <div class="card-body row px-0">
+            <h5 class="card-title">ACTUALITES SUR LES ALIMENTS DU MOIS</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <a class="text-black link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""> Lire la suite</a>
           </div> 
@@ -186,21 +197,21 @@
       </div>
       <div class="col">
         <div class="card h-100 border-0">
-          <img src="assets/images/bg_temoignage copy.jpg" class="card-img-top rounded-0" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+          <img src="assets/images/coachs.jpg" class="card-img-top rounded-0" alt="...">
+          <div class="card-body row px-0">
+            <h5 class="card-title">ACTUALITES SUR LES EXERCICES RECOMMANDE PAR NOS COACHS</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             <a class="text-black link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""> Lire la suite</a>  
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 border-0">
-          <img src="assets/images/bg_temoignage copy.jpg" class="card-img-top rounded-0" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+        <div class="card h-100 border-0 ">
+          <img src="assets/images/dodo.jpg" class="card-img-top rounded-0" alt="...">
+          <div class="card-body row px-0">
+            <h5 class="card-title">ACTUALITES SUR LES TEMPS DE REPOS ET TEMPS DE SOMMEILS</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <a class="text-black link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""> Lire la suite</a>
+            <a class="text-black link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href=""> Lire la suite</a>
           </div> 
         </div>
       </div>
@@ -216,7 +227,7 @@
     <div class="d-flex align-items-center justify-content-center flex-column text-light">
       
             <h5 class="fw-bold mt-5">STUDIO SPORT & COACHING,NOS PARTENAIRE</h5>
-            <hr style="border-bottom: 6px solid goldenrod; border-radius: 5px;" width= "80px">
+            <hr>
         <div class="p-5">
             <P>En tant que menmbre du Studio & Coachineg, vous beneficier dans ces etablissement d'avantages exlusifs  <a href="#">cliquer ici</a> pour en savoir plus.</P>
         </div>
@@ -240,23 +251,23 @@
                   <img src="assets/images/activites/instagram/tutos.jpg" class="w-100 img-fluid" alt="">
              </div>
              <div class="col">
-              <img src="assets/images/activites/instagram/infos.jpg"class="w-100 img-fluid"  alt="">
+              <img src="assets/images/activites/instagram/infos.jpg" class="w-100 img-fluid"  alt="">
             </div>
 
             <div class="col">
-              <img src="assets/images/activites/instagram/photos.jpg"class="w-100 img-fluid"  alt="">
+              <img src="assets/images/activites/instagram/photos.jpg" class="w-100 img-fluid"  alt="">
             </div>
 
             <div class="col">
-              <img src="assets/images/activites/instagram/promos.jpg"class="w-100 img-fluid"  alt="">
+              <img src="assets/images/activites/instagram/promos.jpg" class="w-100 img-fluid"  alt="">
             </div>
 
             <div class="col">
-              <img src="assets/images/activites/instagram/videos.jpg"class="w-100 img-fluid"  alt="">
+              <img src="assets/images/activites/instagram/videos.jpg" class="w-100 img-fluid"  alt="">
             </div>
 
             <div class="col">
-              <img src="assets/images/activites/instagram/infos.jpg"class="w-100 img-fluid"  alt="">
+              <img src="assets/images/activites/instagram/infos.jpg" class="w-100 img-fluid"  alt="">
             </div>
             
           </div>
@@ -300,7 +311,6 @@
             </div>    
         </div>     
       </div>                 
-    </div>
     <div class=" container-fluid d-flex justify-content-center pt-5 bg-black text-white ">
       <div class="g-0">
          Un site créé par
@@ -310,6 +320,8 @@
         <a class="" href="#"><img src="assets/images/364.png" alt=""></a>
       </div>
     </div>
+    </div>
+   </div>  
   </footer>
                                <!-- FIN FOOTER -->
 

@@ -66,17 +66,67 @@ body{
   }
 
   footer a {
-    color:goldenrod;
+    color:#E2BC74;;
   }
 
   hr{
-    border-bottom: 6px solid goldenrod;
+    border-bottom: 6px solid #E2BC74;;
     border-radius: 5px;
     width: 80px;
+    opacity: 75%;
   }
 
   @media screen and (max-width: 992px) {
     .collapse {
         background-color:rgba(0, 0, 0, 0.852); /* Changez la couleur selon vos besoins */
+        width: 100%
     }
 }
+
+.card img {
+  height: 200px;
+}
+
+#contact header{
+  background: url("../assets/images/visuel/visuel_2.jpg") center/cover no-repeat; 
+  height: 400px;
+}
+
+h6{
+  font-weight: bold;
+}
+
+span{
+  font-weight: bold;
+}
+
+.btn-primary{
+  --bs-btn-bg: #E2BC74;
+  --bs-btn-border-color: #E2BC74;
+  border-radius: 0 !important;
+}
+
+input ,textarea{
+border-radius: 0 !important;
+background-color: #dee2e6 !important;
+/* padding-right: 15px !important; */
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-hover-bg: #E2BC74;
+  border-radius: 0px; 
+}
+
+#presentation header{
+  background: url("../assets/images/visuel/visuel_3.jpg") center/cover no-repeat; 
+  height: 400px;
+}
+/* page 404 */
+#page_404 body{
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
